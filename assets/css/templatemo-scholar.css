@@ -576,7 +576,7 @@ Header Style
   position: absolute;
   background-color: #7a6ad8;
   min-width: 160px;
-  min-height: 100px;
+  min-height: 140px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
