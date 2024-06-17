@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
+<head>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
 
-    <title>Student Registration | Educational Website</title>
+  <title>Student Registration | Educational Website</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
 
-    <!-- Additional CSS Files -->
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
-    <link rel="stylesheet" href="assets/css/owl.css">
-    <link rel="stylesheet" href="assets/css/animate.css">
+  <!-- Additional CSS Files -->
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="assets/css/templatemo-scholar.css">
+  <link rel="stylesheet" href="assets/css/owl.css">
+  <link rel="stylesheet" href="assets/css/animate.css">
 
-  </head>
+</head>
 
 <body>
 
@@ -45,69 +46,71 @@
   <!-- Header Area Start -->
   <header class="header-area header-sticky">
     <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <nav class="main-nav">
-                    <!-- Logo Start -->
-                    <a href="index.html" class="logo">
-                        <h1>logo</h1>
-                    </a>
-                    <!-- Logo End -->
-                </nav>
-            </div>
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- Logo Start -->
+            <a href="index.html" class="logo">
+              <h1>logo</h1>
+            </a>
+            <!-- Logo End -->
+          </nav>
         </div>
+      </div>
     </div>
   </header>
   <!-- Header Area End -->
 
   <div class="main-banner" id="register_top">
-    <center><section class="book_demo_class">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <div class="section-heading">
-              <h1 style="color: white;">Enroll Yourself</h1>
+    <center>
+      <section class="book_demo_class">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 text-center">
+              <div class="section-heading">
+                <h1 style="color: white;">Enroll Yourself</h1>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="demo_reg">
-          <div class="title">
+          <div class="demo_reg">
+            <div class="title">
               <p><b>Enroll Now</b></p>
-          </div>
-    
-          <form class="student-registration">
+            </div>
+
+            <form class="student-registration">
               <div class="user_details">
-                  <div class="input_box">
-                      <label for="name">Full Name</label>
-                      <input type="text" id="name" placeholder="Enter your name" required>
-                  </div>
-                  <div class="input_box">
-                      <label for="email">Email</label>
-                      <input type="email" id="email" placeholder="Enter your email" required>
-                  </div>
-                  <div class="input_box">
-                      <label for="phone">Phone Number</label>
-                      <input type="number" id="phone" placeholder="Enter your phone number" required>
-                  </div>
-                  <div class="input_box">
-                    <label for="date">Date of Birth</label>
-                    <input type="date" id="date" required>
-                  </div>
-                  <div class="input_box">
-                    <label for="text">Class</label>
-                    <input type="text" placeholder="Enter your standard" id="language" required>
-                  </div>
-                  <div class="input_box">
-                    <label for="subject_read">Subject Want To Read</label>
-                    <input type="text" placeholder="Write subject you want to read" id="subject" required>
-                  </div>
+                <div class="input_box">
+                  <label for="name">First Name</label>
+                  <input type="text" id="fname" name="firstName" placeholder="Enter your name" required>
+                </div>
+                <div class="input_box">
+                  <label for="name">Last Name</label>
+                  <input type="text" id="lname" name="lastName" placeholder="Enter your name" required>
+                </div>
+                <div class="input_box">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="input_box">
+                  <label for="phone">Phone Number</label>
+                  <input type="number" id="phone" name="contact" placeholder="Enter your phone number" required>
+                </div>
+                <div class="input_box">
+                  <label for="text">Residence</label>
+                  <input type="text" name="residence" placeholder="Enter your standard" id="language" required>
+                </div>
+                <div class="input_box">
+                  <label for="date">Date of Birth</label>
+                  <input type="date" id="date" name="dob" required>
+                </div>
               </div>
               <div class="reg_btn">
-                  <input type="submit" value="Enroll">
+                <input type="submit" value="Enroll">
               </div>
-          </form>
-      </div>
-    </section> </center>
+            </form>
+          </div>
+      </section>
+    </center>
   </div>
 
   <!-- Scripts -->
@@ -116,12 +119,12 @@
     const formEl = document.querySelector('.student-registration');
     formEl.addEventListener('submit', event => {
       event.preventDefault();
-      const name = document.getElementById('name').value;
+      /* const name = document.getElementById('name').value;
       const email = document.getElementById('email').value;
       const phone = document.getElementById('phone').value;
       const date = document.getElementById('date').value;
       const language = document.getElementById('language').value;
-      const subject = document.getElementById('subject').value;
+      const subject = document.getElementById('subject').value; 
 
       // Print input data to console
       console.log(`Name: ${name}`);
@@ -129,11 +132,11 @@
       console.log(`Phone: ${phone}`);
       console.log(`Date: ${date}`);
       console.log(`Language: ${language}`);
-      console.log(`Subject: ${subject}`);
+      console.log(`Subject: ${subject}`); */
 
       const formData = new FormData(formEl);
       const data = new URLSearchParams(formData);
-      fetch('https://jsonplaceholder.typicode.com/posts', {
+      fetch("http://localhost:8000/students", {
         method: 'POST',
         body: data,
         headers: {
@@ -141,8 +144,8 @@
         }
       }).then(res => res.json())
         .then(data => {
-          // console.log(data);
-          alert('Enroll successful');
+          console.log(data)
+          alert(data.msg)
         })
         .catch(error => {
           console.log(error);
@@ -159,5 +162,6 @@
   <script src="assets/js/counter.js"></script>
   <script src="assets/js/custom.js"></script>
 
-  </body>
+</body>
+
 </html>
